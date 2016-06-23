@@ -4,8 +4,14 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
         && apt-get install -y --no-install-recommends \
+            cadaver \
             php5 \
             php5-ldap \
+            wget \
+            curl \
+            sqlite3 \
+            libfontconfig \
+            libfontconfig-dev \
         && rm -rf /var/lib/apt/lists/* \
         && npm set progress=false \
         && npm install -g \
