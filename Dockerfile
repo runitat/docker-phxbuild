@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:9
 MAINTAINER Manuel Klemenz <manuel.klemenz@runit.at>
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -7,6 +7,8 @@ RUN apt-get update \
             cadaver \
             php5 \
             php5-ldap \
+            zip \
+            unzip \
             wget \
             curl \
             sqlite3 \
