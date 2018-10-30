@@ -21,6 +21,8 @@ RUN apt-get update \
             grunt-cli \
             bower \
             gulp \
+            phantomjs@1.* \
+            @vue/cli \
         && php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php \
         && php composer-setup.php \
         && php -r "unlink('composer-setup.php');" \
