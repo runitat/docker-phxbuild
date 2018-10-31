@@ -16,7 +16,7 @@ RUN apt-get update \
             libfontconfig-dev \
         && rm -rf /var/lib/apt/lists/* \
         && npm set progress=false \
-        && npm install -g \
+        && npm install --unsafe-perm -g \
             grunt \
             grunt-cli \
             bower \
