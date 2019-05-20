@@ -1,12 +1,12 @@
-FROM node:9
+FROM node:lts
 MAINTAINER Manuel Klemenz <manuel.klemenz@runit.at>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
         && apt-get install -y --no-install-recommends \
             cadaver \
-            php5 \
-            php5-ldap \
+            php \
+            php-ldap \
             zip \
             unzip \
             wget \
