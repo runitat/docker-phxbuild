@@ -7,6 +7,8 @@ RUN apt-get update \
             cadaver \
             php \
             php-ldap \
+            php-dom \
+            php-mbstring \
             zip \
             unzip \
             wget \
